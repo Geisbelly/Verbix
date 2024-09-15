@@ -10,9 +10,6 @@ export default function Page() {
             padding: 0;
             overflow: hidden;
             font-family: Arial, Helvetica, sans-serif;
-            
-            
-
           }
         `}
       </style>
