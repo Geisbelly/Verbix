@@ -12,7 +12,7 @@ export default function Page() {
           }
         `}
       </style>
-      <aside style={{ display: 'flex', width: '5%', flexDirection: 'column', padding: '10px', alignItems: 'center' }}>
+      <aside style={{ display: 'flex', width: '5%', flexDirection: 'column', padding: '10px', alignItems: 'center',borderRight:'1px solid black' }}>
         <div id="logo" style={{ alignSelf: 'center' }}>
           <img src="logo.jpg" alt="Logo" style={{ width: '100px', height: '100px' }} />
         </div>
@@ -40,7 +40,7 @@ export default function Page() {
 
       <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
         <div style={{ display: 'flex', flex: 1, gap: '0px' }}>
-          <section id="perfil" style={{ width: '35%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '30px' }}>
+          <section id="perfil" style={{ width: '35%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '30px', borderRight:'2.5px solid black'  }}>
             <div style={{ textAlign: 'center' }}>
               <img src="/foto.jpeg" alt="Foto do Perfil" style={{ marginBottom:'5px',width: '180px', height: '180px', borderRadius: '100%', border: '5px solid #284460' }} />
               <h2 style={{marginBottom:'3px',marginTop:'5px'}}>João da Silva</h2>
