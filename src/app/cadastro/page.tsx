@@ -20,27 +20,32 @@ export default function Page() {
         <p style={{color:'#fff', marginBottom:'3px',marginTop:'5px'}}>Você é novo por aqui? Não se preocupe, o cadastro é bem simples!</p>
         <img src="logo.png" alt="Logo" style={{ width: '400px', height: '400px' }} />
       </div>
-      <div style={{ flex: 1,display:'flex',alignItems:'center', justifyContent:'center'}}>
-      <div style={{ maxWidth: '400px', width: '100%', height:'380px', padding: '20px', alignContent:'center', borderRadius:'5px'}}>
-          <h1 style={{ textAlign: 'center', marginBottom:'4px' }}>Cadastro</h1>
+      
+      <div style={{ flex: 1,display:'flex', alignItems:'center', justifyContent:'center'}}>
+      <div style={{ maxWidth: '400px', width: '100%', padding: '20px', alignContent:'center', borderRadius:'5px'}}>
+          <h1 style={{ textAlign: 'center', marginBottom:'4px' }}>Cadastre-se</h1>
           <p style={{ textAlign: 'center', marginTop:'4px' }}>Bem vindo(a)!</p>
           <form>
+          <div style={{ marginBottom: '15px', alignItems:'center' }}>
+              
+              <input type="name" id="name" name="name" placeholder="Nome" style={{ width: '95%', padding: '10px', borderRadius: '4px', border: '1px solid #ddd',alignItems:'center'}} required />
+            </div>
             <div style={{ marginBottom: '15px', alignItems:'center' }}>
-              <label htmlFor="email" style={{ display: 'block', marginBottom: '5px' }}>Email</label>
-              <input type="email" id="email" name="email" placeholder="Seu email" style={{ width: '95%', padding: '10px', borderRadius: '4px', border: '1px solid #ddd',alignItems:'center'}} required />
+              
+              <input type="email" id="email" name="email" placeholder="Email" style={{ width: '95%', padding: '10px', borderRadius: '4px', border: '1px solid #ddd',alignItems:'center'}} required />
             </div>
             <div style={{ marginBottom: '15px' }}>
-              <label htmlFor="password" style={{ display: 'block', marginBottom: '5px' }}>Senha</label>
-              <input type="password" id="password" name="password" placeholder="Sua senha" style={{ width: '95%', padding: '10px', borderRadius: '4px', border: '1px solid #ddd' }} required />
+             
+              <input type="password" id="password" name="password" placeholder="Senha" style={{ width: '95%', padding: '10px', borderRadius: '4px', border: '1px solid #ddd' }} required />
             </div>
-            <div style={{ marginBottom: '15px', display: 'flex', alignItems: 'center' }}>
-              <input type="checkbox" id="remember-me" name="remember-me" style={{ marginRight: '10px' }} />
-              <label htmlFor="remember-me">Lembre-se de mim</label>
+            <div style={{ marginBottom: '15px' }}>
+            
+              <input type="password" id="password-confirm" name="password-confirm" placeholder="Confirme a Senha" style={{ width: '95%', padding: '10px', borderRadius: '4px', border: '1px solid #ddd' }} required />
             </div>
-            <button type="submit" style={{ width: '100%', padding: '10px', backgroundColor: '#2596be', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>Entrar</button>
+            <button type="submit" style={{ width: '100%', padding: '10px', backgroundColor: '#2596be', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>Cadastrar</button>
           </form>
           <p style={{ textAlign: 'center', marginTop: '30px' }}>
-            Já tem conta? <a href="/login" style={{ color: '#2596be', textDecoration: 'none' }}>Login</a>
+            Já tem uma conta? <a href="/login" style={{ color: '#2596be', textDecoration: 'none' }}>Login</a>
           </p>
         </div>
       

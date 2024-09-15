@@ -10,7 +10,6 @@ export default function Page() {
             padding: 0;
             overflow: hidden; 
             font-family: Arial, Helvetica, sans-serif;
-            
 
           }
         `}
@@ -30,8 +29,8 @@ export default function Page() {
           <div style={{ margin: '0px', padding: '20px 16px' }}>
             <a href="ranking" style={{textDecoration:'None', color:'#FFFFFF'}}>Ranks</a>
           </div>
-          <div style={{ margin: '0px',padding: '20px 16px', background:'#F5F5F5'}}>
-            <a href="perfil" style={{textDecoration:'None', color:'#2596be'}}>Perfil</a>
+          <div style={{ margin: '0px',padding: '20px 16px', background:'#E8F6FF'}}>
+            <a href="perfil" style={{textDecoration:'None', color:'#2596be',fontWeight:'550'}}>Perfil</a>
           </div>
         </nav>
 
@@ -41,56 +40,57 @@ export default function Page() {
         </div>
       </aside>
 
-      <main style={{ flex: 1, display: 'flex', flexDirection: 'column', background:'#F5F5F5' }}>
+      <main style={{ flex: 1, display: 'flex', flexDirection: 'column', background:'#E8F6FF',color:'#3F3F3F' }}>
         <div style={{ display: 'flex', flex: 1, gap: '0px' }}>
-          <section id="perfil" style={{ width: '35%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '30px', borderRight:'2.5px solid #E1E3E5'  }}>
+          <section id="perfil" style={{ width: '35%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '50px', borderRight:'2.5px solid #E1E3E5'  }}>
             <div style={{ textAlign: 'center' }}>
-              <img src="/foto.jpeg" alt="Foto do Perfil" style={{ marginBottom:'5px',width: '180px', height: '180px', borderRadius: '100%', border: '7px solid #2596be' }} />
-              <h2 style={{marginBottom:'3px',marginTop:'5px'}}>João da Silva</h2>
+              <img src="/foto.png" alt="Foto do Perfil" style={{ marginBottom:'5px',width: '180px', height: '180px', borderRadius: '100%', border: '7px solid #2596be' }} />
+              <h3 style={{marginBottom:'3px',marginTop:'5px'}}>João da Silva</h3>
               <h4 style={{marginTop:'2px', marginBottom:'8px', color:'#8E9192'}}>@joaosilva</h4>
             </div>
             <div style={{ display: 'flex', flexDirection: 'row', gap: '20px', padding: '20px', textAlign: 'center' }}>
-              <div>
-                <h4 style={{marginBottom:'3px',marginTop:'8px'}}>Livros lidos</h4>
-                <p style={{marginTop:'4px'}}>12</p>
+              <div style={{maxWidth:'82px', minHeight:'50px'}}>
+                <p style={{marginBottom:'3px',marginTop:'8px',fontSize:'15px', fontWeight:'550'}}>Livros lidos</p>
+                <p style={{marginTop:'5px', fontSize:'15px'}}>12</p>
               </div>
-              <div>
-                <h4 style={{marginBottom:'3px',marginTop:'8px'}}>Páginas lidas</h4>
-                <p style={{marginTop:'4px'}}>1502</p>
+              <div style={{maxWidth:'82px', minHeight:'50px'}}>
+                <p style={{marginBottom:'3px',marginTop:'8px',fontSize:'15px', fontWeight:'550'}}>Páginas lidas</p>
+                <p style={{marginTop:'5px', fontSize:'15px'}}>1502</p>
               </div>
-              <div>
-                <h4 style={{marginBottom:'3px',marginTop:'8px'}}>Missões concluídas</h4>
-                <p style={{marginTop:'4px'}}>5</p>
+              <div style={{maxWidth:'82px', minHeight:'50px'}}>
+                <p style={{marginBottom:'3px',marginTop:'8px', fontSize:'15px', fontWeight:'550'}}>Missões concluídas</p>
+                <p style={{marginTop:'5px', fontSize:'15px'}}>5</p>
               </div>
             </div>
           </section>
 
           <section id="conquistas" style={{ width: '65%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '30px' }}>
-            <h2>• CONQUISTA •</h2>
-            <div style={{ display: 'flex', flexDirection: 'row', gap: '20px', padding: '20px' }}>
-              <div style={{ textAlign: 'center' }}>
-                <img src="conq1.jpg" alt="Conquista 1" style={{ width: '100px', height: '100px' }} />
-                <h4>Conquista 1</h4>
+          <h3 style={{marginBottom:'3px'}}>• CONQUISTA •</h3>
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '20px', padding: '20px',marginTop:'3px'  }}>
+            
+              <div style={{ textAlign: 'center'}}>
+                <img src="conquista.jfif" alt="Conquista 1" style={{ width: '145px', height: '145px', borderRadius:'10px', marginBottom:'5px' }} />
+                <h4 style={{marginTop:'5px'}}>Conquista 1</h4>
               </div>
               <div style={{ textAlign: 'center' }}>
-                <img src="conq2.jpg" alt="Conquista 2" style={{ width: '100px', height: '100px' }} />
-                <h4>Conquista 2</h4>
+                <img src="conquista.jfif" alt="Conquista 2" style={{ width: '145px', height: '145px', borderRadius:'10px', marginBottom:'5px' }} />
+                <h4 style={{marginTop:'5px'}}>Conquista 2</h4>
               </div>
               <div style={{ textAlign: 'center' }}>
-                <img src="conq3.jpg" alt="Conquista 3" style={{ width: '100px', height: '100px' }} />
-                <h4>Conquista 3</h4>
+                <img src="conquista.jfif" alt="Conquista 3" style={{ width: '145px', height: '145px', borderRadius:'10px', marginBottom:'5px' }} />
+                <h4 style={{marginTop:'5px'}}>Conquista 3</h4>
               </div>
             </div>
 
-            <h2>• MISSÃO DO MÊS •</h2>
-            <div>
+            <h3 style={{marginBottom:'3px'}}>• MISSÃO DO MÊS •</h3>
+            <div  style={{marginTop:'3px'}}>
               <div id="progresso-paginas">
                 <h4 style={{marginBottom:'5px'}}>Páginas</h4>
-                <progress id="barra-progresso" value="46" max="100" style={{ width: '350px', height: '32px' }}></progress>
+                <progress id="barra-progresso" value="46" max="100" style={{ width: '450px', height: '32px' }}></progress>
               </div>
               <div id="progresso-livros">
                 <h4 style={{marginBottom:'5px'}}>Livros</h4>
-                <progress id="barra-progresso" value="2" max="5" style={{ width: '350px', height: '32px' }}></progress>
+                <progress id="barra-progresso" value="2" max="5" style={{ width: '450px', height: '32px' }}></progress>
               </div>
             </div>
           </section>
