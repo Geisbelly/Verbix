@@ -5,6 +5,12 @@ export default function RootLayout({
 }) {
   return(
     <html lang="pt-br">
+      <head>
+        <meta 
+        name="theme-color"
+        content="#2596be"
+        />
+      </head>
       <body>{children}</body>
     </html>
   )
