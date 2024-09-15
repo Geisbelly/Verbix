@@ -46,7 +46,7 @@ export default function Page() {
             <div style={{ textAlign: 'center' }}>
               <img src="/foto.jpeg" alt="Foto do Perfil" style={{ marginBottom:'5px',width: '180px', height: '180px', borderRadius: '100%', border: '7px solid #2596be' }} />
               <h2 style={{marginBottom:'3px',marginTop:'5px'}}>João da Silva</h2>
-              <h4 style={{marginTop:'2px'}}>@joaosilva</h4>
+              <h4 style={{marginTop:'2px', color:'#8E9192'}}>@joaosilva</h4>
             </div>
             <div style={{ display: 'flex', flexDirection: 'row', gap: '20px', padding: '20px', textAlign: 'center' }}>
               <div>
