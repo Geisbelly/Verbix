@@ -9,26 +9,28 @@ export default function Page() {
             margin: 0;
             padding: 0;
             overflow: hidden; e rolagem indesejadas */
+            
+
           }
         `}
       </style>
-      <aside style={{ display: 'flex', width: '5%', flexDirection: 'column', padding: '10px', alignItems: 'center',borderRight:'1px solid black' }}>
+      <aside style={{ display: 'flex', width: '5%', flexDirection: 'column', padding: '10px', alignItems: 'center', background:'#2596be' }}>
         <div id="logo" style={{ alignSelf: 'center' }}>
           <img src="logo.jpg" alt="Logo" style={{ width: '100px', height: '100px' }} />
         </div>
 
         <nav style={{ flex: 1, alignContent: 'center', textAlign: 'center' }}>
           <div style={{ margin: '0 10px', padding: '20px 10px' }}>
-            <a href="biblioteca">Biblioteca</a>
+            <a href="biblioteca" style={{textDecoration:'None', color:'#FFFFFF'}}>Biblioteca</a>
           </div>
           <div style={{ margin: '0 10px', padding: '20px 10px' }}>
-            <a href="leitura">Leitura</a>
+            <a href="leitura" style={{textDecoration:'None', color:'#FFFFFF'}}>Leitura</a>
           </div>
           <div style={{ margin: '0 10px', padding: '20px 10px' }}>
-            <a href="ranking">Ranks</a>
+            <a href="ranking" style={{textDecoration:'None', color:'#FFFFFF'}}>Ranks</a>
           </div>
-          <div style={{ margin: '0 10px', padding: '20px 10px' }}>
-            <a href="perfil">Perfil</a>
+          <div style={{ margin: '0 10px', padding: '20px 10px', background:'#F5F5F5'}}>
+            <a href="perfil" style={{textDecoration:'None', color:'#2596be'}}>Perfil</a>
           </div>
         </nav>
 
@@ -38,11 +40,11 @@ export default function Page() {
         </div>
       </aside>
 
-      <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+      <main style={{ flex: 1, display: 'flex', flexDirection: 'column', background:'#F5F5F5' }}>
         <div style={{ display: 'flex', flex: 1, gap: '0px' }}>
-          <section id="perfil" style={{ width: '35%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '30px', borderRight:'2.5px solid black'  }}>
+          <section id="perfil" style={{ width: '35%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '30px', borderRight:'2.5px solid #2596be'  }}>
             <div style={{ textAlign: 'center' }}>
-              <img src="/foto.jpeg" alt="Foto do Perfil" style={{ marginBottom:'5px',width: '180px', height: '180px', borderRadius: '100%', border: '5px solid #284460' }} />
+              <img src="/foto.jpeg" alt="Foto do Perfil" style={{ marginBottom:'5px',width: '180px', height: '180px', borderRadius: '100%', border: '5px solid #2596be' }} />
               <h2 style={{marginBottom:'3px',marginTop:'5px'}}>João da Silva</h2>
               <h4 style={{marginTop:'2px'}}>@joaosilva</h4>
             </div>
