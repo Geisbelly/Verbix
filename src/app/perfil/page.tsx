@@ -44,7 +44,7 @@ export default function Page() {
         <div style={{ display: 'flex', flex: 1, gap: '0px' }}>
           <section id="perfil" style={{ width: '35%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '30px', borderRight:'2.5px solid #2596be'  }}>
             <div style={{ textAlign: 'center' }}>
-              <img src="/foto.jpeg" alt="Foto do Perfil" style={{ marginBottom:'5px',width: '180px', height: '180px', borderRadius: '100%', border: '5px solid #2596be' }} />
+              <img src="/foto.jpeg" alt="Foto do Perfil" style={{ marginBottom:'5px',width: '180px', height: '180px', borderRadius: '100%', border: '7px solid #2596be' }} />
               <h2 style={{marginBottom:'3px',marginTop:'5px'}}>João da Silva</h2>
               <h4 style={{marginTop:'2px'}}>@joaosilva</h4>
             </div>
