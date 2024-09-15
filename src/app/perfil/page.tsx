@@ -8,7 +8,8 @@ export default function Page() {
           body {
             margin: 0;
             padding: 0;
-            overflow: hidden; e rolagem indesejadas */
+            overflow: hidden; 
+            font-family: Arial, Helvetica, sans-serif;
             
 
           }
@@ -46,19 +47,19 @@ export default function Page() {
             <div style={{ textAlign: 'center' }}>
               <img src="/foto.jpeg" alt="Foto do Perfil" style={{ marginBottom:'5px',width: '180px', height: '180px', borderRadius: '100%', border: '7px solid #2596be' }} />
               <h2 style={{marginBottom:'3px',marginTop:'5px'}}>João da Silva</h2>
-              <h4 style={{marginTop:'2px', color:'#8E9192'}}>@joaosilva</h4>
+              <h4 style={{marginTop:'2px', marginBottom:'8px', color:'#8E9192'}}>@joaosilva</h4>
             </div>
             <div style={{ display: 'flex', flexDirection: 'row', gap: '20px', padding: '20px', textAlign: 'center' }}>
               <div>
-                <h4 style={{marginBottom:'3px',marginTop:'12px'}}>Livros lidos</h4>
+                <h4 style={{marginBottom:'3px',marginTop:'8px'}}>Livros lidos</h4>
                 <p style={{marginTop:'4px'}}>12</p>
               </div>
               <div>
-                <h4 style={{marginBottom:'3px',marginTop:'12px'}}>Páginas lidas</h4>
+                <h4 style={{marginBottom:'3px',marginTop:'8px'}}>Páginas lidas</h4>
                 <p style={{marginTop:'4px'}}>1502</p>
               </div>
               <div>
-                <h4 style={{marginBottom:'3px',marginTop:'12px'}}>Missões concluídas</h4>
+                <h4 style={{marginBottom:'3px',marginTop:'8px'}}>Missões concluídas</h4>
                 <p style={{marginTop:'4px'}}>5</p>
               </div>
             </div>
