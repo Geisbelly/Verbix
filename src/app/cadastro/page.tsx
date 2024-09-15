@@ -13,10 +13,17 @@ export default function Page() {
           }
         `}
       </style>
+      
+      
+      <div style={{ flex: 1, display: 'flex', flexDirection:'column', justifyContent: 'center', alignItems: 'center', backgroundColor: '#2596be', borderBottomRightRadius:'100px',borderTopRightRadius:'100px' }}>
+        <h1 style={{color:'#fff', marginBottom:'3px'}}>Seja Bem Vindo(a)!</h1>
+        <p style={{color:'#fff', marginBottom:'3px',marginTop:'5px'}}>Você é novo por aqui? Não se preocupe, o cadastro é bem simples!</p>
+        <img src="logo.png" alt="Logo" style={{ width: '400px', height: '400px' }} />
+      </div>
       <div style={{ flex: 1,display:'flex',alignItems:'center', justifyContent:'center'}}>
       <div style={{ maxWidth: '400px', width: '100%', height:'380px', padding: '20px', alignContent:'center', borderRadius:'5px'}}>
-          <h1 style={{ textAlign: 'center', marginBottom:'4px' }}>Login</h1>
-          <p style={{ textAlign: 'center', marginTop:'4px' }}>Bem vindo(a) de volta</p>
+          <h1 style={{ textAlign: 'center', marginBottom:'4px' }}>Cadastro</h1>
+          <p style={{ textAlign: 'center', marginTop:'4px' }}>Bem vindo(a)!</p>
           <form>
             <div style={{ marginBottom: '15px', alignItems:'center' }}>
               <label htmlFor="email" style={{ display: 'block', marginBottom: '5px' }}>Email</label>
@@ -33,16 +40,10 @@ export default function Page() {
             <button type="submit" style={{ width: '100%', padding: '10px', backgroundColor: '#2596be', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>Entrar</button>
           </form>
           <p style={{ textAlign: 'center', marginTop: '30px' }}>
-            Não tem uma conta? <a href="/cadastro" style={{ color: '#2596be', textDecoration: 'none' }}>Cadastrar</a>
+            Já tem conta? <a href="/login" style={{ color: '#2596be', textDecoration: 'none' }}>Login</a>
           </p>
         </div>
       
-      </div>
-      
-      <div style={{ flex: 1, display: 'flex', flexDirection:'column', justifyContent: 'center', alignItems: 'center', backgroundColor: '#2596be', borderBottomLeftRadius:'100px',borderTopLeftRadius:'100px' }}>
-        <h1 style={{color:'#fff', marginBottom:'3px'}}>Hello, amigo!</h1>
-        <p style={{color:'#fff', marginBottom:'3px',marginTop:'5px'}}>Ficamos felizes em te-lo(a) aqui conosco novamente!</p>
-        <img src="logo.png" alt="Logo" style={{ width: '400px', height: '400px' }} />
       </div>
     </div>
   );
