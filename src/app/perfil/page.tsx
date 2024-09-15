@@ -12,7 +12,7 @@ export default function Page() {
           }
         `}
       </style>
-      <aside style={{ display: 'flex', width: '5%', flexDirection: 'column', padding: '10px', background: 'aqua', alignItems: 'center' }}>
+      <aside style={{ display: 'flex', width: '5%', flexDirection: 'column', padding: '10px', alignItems: 'center' }}>
         <div id="logo" style={{ alignSelf: 'center' }}>
           <img src="logo.jpg" alt="Logo" style={{ width: '100px', height: '100px' }} />
         </div>
@@ -40,7 +40,7 @@ export default function Page() {
 
       <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
         <div style={{ display: 'flex', flex: 1, gap: '0px' }}>
-          <section id="perfil" style={{ width: '35%', display: 'flex', flexDirection: 'column', alignItems: 'center', background: 'green', paddingTop: '30px' }}>
+          <section id="perfil" style={{ width: '35%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '30px' }}>
             <div style={{ textAlign: 'center' }}>
               <img src="/foto.jpeg" alt="Foto do Perfil" style={{ marginBottom:'5px',width: '180px', height: '180px', borderRadius: '100%', border: '5px solid #284460' }} />
               <h2 style={{marginBottom:'3px',marginTop:'5px'}}>João da Silva</h2>
@@ -62,7 +62,7 @@ export default function Page() {
             </div>
           </section>
 
-          <section id="conquistas" style={{ width: '65%', display: 'flex', flexDirection: 'column', alignItems: 'center', background: 'red', paddingTop: '30px' }}>
+          <section id="conquistas" style={{ width: '65%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '30px' }}>
             <h2>• CONQUISTA •</h2>
             <div style={{ display: 'flex', flexDirection: 'row', gap: '20px', padding: '20px' }}>
               <div style={{ textAlign: 'center' }}>
