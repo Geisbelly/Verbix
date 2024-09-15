@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Page() {
   return (
-    <div style={{ display: 'flex', height: '100vh', margin: '0', padding: '0',  background:'#F3F8FC'}}>
+    <div style={{ display: 'flex', height: '100vh', margin: '0', padding: '0',  background:'#F3F8FC',color:'#262626'}}>
       <style>
         {`
           body {
