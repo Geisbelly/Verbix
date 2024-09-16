@@ -31,19 +31,32 @@ export default function RankingPage() {
             <img src="logo.png" alt="Logo" style={{ width: '80px', height: '80px' }} />
           </div>
   
-          <nav style={{ flex: 1, alignContent: 'center', textAlign: 'center'}}>
-            <div style={{ margin: '0px',padding: '20px 16px' }}>
-              <a href="biblioteca" style={{textDecoration:'None', color:'#FFFFFF'}}>Biblioteca</a>
-            </div>
-            <div style={{ margin: '0px', padding: '20px 16px' }}>
-              <a href="leitura" style={{textDecoration:'None', color:'#FFFFFF'}}>Leitura</a>
-            </div>
-            <div style={{ margin: '0px',padding: '20px 16px', background:'#E8F6FF'}}>
-              <a href="ranking" style={{textDecoration:'None', color:'#2596be',fontWeight:'550'}}>Ranks</a>
-            </div>
-            <div style={{ margin: '0px', padding: '20px 16px' }}>
-              <a href="perfil" style={{textDecoration:'None', color:'#FFFFFF'}} >Perfil</a>
-            </div>
+          <nav style={{ flex: 1, alignContent: 'center', textAlign: 'center' }}>
+
+            <a href="biblioteca" style={{ textDecoration: 'none', color: '#FFFFFF' }}>
+              <div style={{ margin: '0px', padding: '20px 16px' }}>
+                Biblioteca
+              </div>
+            </a>
+
+            <a href="leitura" style={{ textDecoration: 'none', color: '#FFFFFF' }}>
+              <div style={{ margin: '0px', padding: '20px 16px' }}>
+                Leitura
+              </div>
+            </a>
+
+            <a href="ranking" style={{ textDecoration: 'none', color: '#2596be', fontWeight: '550' }}>
+              <div style={{ margin: '0px', padding: '20px 16px', background: '#E8F6FF' }}>
+                Ranks
+              </div>
+            </a>
+
+            <a href="perfil" style={{ textDecoration: 'none', color: '#FFFFFF' }}>
+              <div style={{ margin: '0px', padding: '20px 16px' }}>
+                Perfil
+              </div>
+            </a>
+            
           </nav>
   
           <div id="menu-inferior" style={{ marginTop: 'auto', marginBottom: '20px', textAlign: 'center' }}>

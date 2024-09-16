@@ -26,12 +26,19 @@ export default function Page() {
         </div>
 
         <nav style={{ flex: 1, alignContent: 'center', textAlign: 'center'}}>
-          <div style={{ margin: '0px',padding: '20px 16px', background:'#E8F6FF'}}>
-            <a href="biblioteca" style={{textDecoration:'None', color:'#2596be',fontWeight:'550'}}>Biblioteca</a>
-          </div>
-          <div style={{ margin: '0px', padding: '20px 16px' }}>
-            <a href="leitura" style={{textDecoration:'None', color:'#FFFFFF'}}>Leitura</a>
-          </div>
+
+          <a href="biblioteca" style={{textDecoration:'None', color:'#2596be',fontWeight:'550'}}>
+            <div style={{ margin: '0px',padding: '20px 16px', background:'#E8F6FF'}}>
+              Biblioteca
+            </div>
+          </a>
+
+          <a href="leitura" style={{textDecoration:'None', color:'#FFFFFF'}}>
+            <div style={{ margin: '0px', padding: '20px 16px' }}>
+              Leitura
+            </div>
+          </a>
+          
           <div style={{ margin: '0px', padding: '20px 16px' }}>
             <a href="ranking" style={{textDecoration:'None', color:'#FFFFFF'}}>Ranks</a>
           </div>

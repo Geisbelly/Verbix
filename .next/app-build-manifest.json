@@ -1,15 +1,5 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
-    "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/layout.js"
-    ],
     "/perfil/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -20,15 +10,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/perfil/layout.js"
     ],
-    "/login/page": [
+    "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/login/page.js"
+      "static/chunks/app/layout.js"
     ],
-    "/login/layout": [
+    "/ranking/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/login/layout.js"
+      "static/chunks/app/ranking/page.js"
+    ],
+    "/leitura/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/leitura/page.js"
     ],
     "/biblioteca/page": [
       "static/chunks/webpack.js",
@@ -39,16 +34,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/biblioteca/layout.js"
-    ],
-    "/leitura/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/leitura/page.js"
-    ],
-    "/ranking/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/ranking/page.js"
     ]
   }
 }

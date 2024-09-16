@@ -26,18 +26,31 @@ export default function Page() {
         </div>
 
         <nav style={{ flex: 1, alignContent: 'center', textAlign: 'center'}}>
-          <div style={{ margin: '0px',padding: '20px 16px' }}>
-            <a href="biblioteca" style={{textDecoration:'None', color:'#FFFFFF'}}>Biblioteca</a>
-          </div>
-          <div style={{ margin: '0px', padding: '20px 16px' }}>
-            <a href="leitura" style={{textDecoration:'None', color:'#FFFFFF'}}>Leitura</a>
-          </div>
-          <div style={{ margin: '0px', padding: '20px 16px' }}>
-            <a href="ranking" style={{textDecoration:'None', color:'#FFFFFF'}}>Ranks</a>
-          </div>
-          <div style={{ margin: '0px',padding: '20px 16px', background:'#E8F6FF'}}>
-            <a href="perfil" style={{textDecoration:'None', color:'#2596be',fontWeight:'550'}}>Perfil</a>
-          </div>
+          
+          <a href="biblioteca" style={{textDecoration:'None', color:'#FFFFFF'}}>
+            <div style={{ margin: '0px',padding: '20px 16px' }}>
+              Biblioteca
+            </div>
+          </a>
+
+          <a href="leitura" style={{textDecoration:'None', color:'#FFFFFF'}}>
+            <div style={{ margin: '0px', padding: '20px 16px' }}>
+              Leitura
+            </div>
+          </a>
+
+          <a href="ranking" style={{textDecoration:'None', color:'#FFFFFF'}}>
+            <div style={{ margin: '0px', padding: '20px 16px' }}>
+              Ranks
+            </div>
+          </a>
+
+          <a href="perfil" style={{textDecoration:'None', color:'#2596be',fontWeight:'550'}}>
+            <div style={{ margin: '0px',padding: '20px 16px', background:'#E8F6FF'}}>
+              Perfil
+            </div>
+          </a>
+
         </nav>
 
         <div id="menu-inferior" style={{ marginTop: 'auto', marginBottom: '20px', textAlign: 'center' }}>
