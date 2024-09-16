@@ -1,4 +1,6 @@
+"use client";
 import React from 'react';
+
 
 export default function Page() {
   return (
@@ -39,8 +41,15 @@ export default function Page() {
         </nav>
 
         <div id="menu-inferior" style={{ marginTop: 'auto', marginBottom: '20px', textAlign: 'center' }}>
-          <button>Sair</button>
-          <button>Config</button>
+
+          <button style={{background:"None", border:'None', marginBottom:'8px'}} onClick={() => { window.location.href = 'login' }}>
+            <img src="logout.svg" alt="sair" style={{ width: '40px', height: '40px' }}  />
+          </button>
+
+          <button style={{background:"None", border:'None'}} onClick={() => { window.location.href = 'login' }}>
+            <img src="config.svg" alt="configurações" style={{ width: '42px', height: '42px' }}  />
+          </button>
+
         </div>
       </aside>
 
