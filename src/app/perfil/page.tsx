@@ -85,7 +85,7 @@ export default function Page() {
                 <p style={{marginBottom:'3px',marginTop:'8px', fontSize:'15px', fontWeight:'550'}}>Missões concluídas</p>
                 <p style={{marginTop:'5px', fontSize:'15px'}}>5</p>
               </div>
-            
+              
             </div>
           </section>
 
