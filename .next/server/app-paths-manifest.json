@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/leitura/page": "app/leitura/page.js",
+  "/ranking/page": "app/ranking/page.js",
+  "/perfil/page": "app/perfil/page.js",
+  "/biblioteca/page": "app/biblioteca/page.js"
+}
