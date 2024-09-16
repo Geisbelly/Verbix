@@ -39,12 +39,17 @@ export default function Page() {
             </div>
           </a>
           
-          <div style={{ margin: '0px', padding: '20px 16px' }}>
-            <a href="ranking" style={{textDecoration:'None', color:'#FFFFFF'}}>Ranks</a>
-          </div>
-          <div style={{ margin: '0px', padding: '20px 16px' }}>
-            <a href="perfil" style={{textDecoration:'None', color:'#FFFFFF'}}>Perfil</a>
-          </div>
+          <a href="ranking" style={{textDecoration:'None', color:'#FFFFFF'}}>
+            <div style={{ margin: '0px', padding: '20px 16px' }}>
+              Ranks
+            </div>
+          </a>
+
+          <a href="perfil" style={{textDecoration:'None', color:'#FFFFFF'}}>
+            <div style={{ margin: '0px', padding: '20px 16px' }}>
+              Perfil
+            </div>
+          </a>
         </nav>
 
         <div id="menu-inferior" style={{ marginTop: 'auto', marginBottom: '20px', textAlign: 'center' }}>
