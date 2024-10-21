@@ -35,7 +35,7 @@ export default function Page() {
 
           <a href="leitura" style={{textDecoration:'None', color:'#2596be',fontWeight:'550'}}>
             <div style={{ margin: '0px',padding: '20px 16px', background:'#E8F6FF'}}>
-              Leitura
+              Leituras
             </div>
           </a>
 

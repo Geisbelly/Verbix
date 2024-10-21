@@ -1,4 +1,4 @@
-// File: C:\Users\geisb\Downloads\projectDSW\projectDSW\src\app\biblioteca\layout.tsx
+// File: C:\Users\geisb\Documents\FACULDADE\PERIODO 4\DESENVOLVIMENTO WEB\projectDSW\src\app\biblioteca\layout.tsx
 import * as entry from '../../../../src/app/biblioteca/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

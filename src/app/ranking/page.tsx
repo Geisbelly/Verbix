@@ -150,7 +150,7 @@ export default function RankingPage() {
           <div className="top-three">
             {ranking.slice(0, 3).map((jogador, index) => (
               <div key={jogador.posicao} className="player">
-                <img src={`/trofeu${index + 1}.svg`} alt={`Troféu ${index + 1}`} />
+                <img src={`/trofeus${index + 1}.png`} alt={`Troféu ${index + 1}`} />
                 <div>{jogador.posicao}º - {jogador.nome}</div>
                 <div>{jogador.pontos} PL</div>
               </div>

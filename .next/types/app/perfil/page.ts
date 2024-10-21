@@ -1,4 +1,4 @@
-// File: C:\Users\geisb\Downloads\projectDSW\projectDSW\src\app\perfil\page.tsx
+// File: C:\Users\geisb\Documents\FACULDADE\PERIODO 4\DESENVOLVIMENTO WEB\projectDSW\src\app\perfil\page.tsx
 import * as entry from '../../../../src/app/perfil/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

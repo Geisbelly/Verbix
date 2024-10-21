@@ -1,4 +1,6 @@
 {
+  "/page": "app/page.js",
+  "/cadastro/page": "app/cadastro/page.js",
   "/ranking/page": "app/ranking/page.js",
   "/leitura/page": "app/leitura/page.js",
   "/perfil/page": "app/perfil/page.js",
