@@ -78,7 +78,7 @@ export default function RootLayout({
         `}
       </style>
           <Navegador />
-          <main style={{ flex: 1, display: 'flex', flexDirection: 'row', background:'#E8F6FF',color:'#3F3F3F' }}>
+          <main style={{ flex: 1,  flexDirection: 'row', background:'#E8F6FF',color:'#3F3F3F' }}>
             {children}
           </main>
         </div>
