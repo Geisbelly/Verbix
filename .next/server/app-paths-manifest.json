@@ -3,5 +3,6 @@
   "/biblioteca/page": "app/biblioteca/page.js",
   "/leitura/page": "app/leitura/page.js",
   "/perfil/page": "app/perfil/page.js",
+  "/login/page": "app/login/page.js",
   "/cadastro/page": "app/cadastro/page.js"
 }
