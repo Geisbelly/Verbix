@@ -1,4 +1,4 @@
-// File: C:\Users\geisb\Documents\FACULDADE\PERIODO 4\DESENVOLVIMENTO WEB\projectDSW\src\app\ranking\page.tsx
+// File: C:\Users\labins.pmw\projectDSW\src\app\ranking\page.tsx
 import * as entry from '../../../../src/app/ranking/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
