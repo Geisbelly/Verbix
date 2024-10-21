@@ -25,7 +25,7 @@ export function Navegador() {
           </div>
         </a>
 
-        <a href="leitura" style={{ textDecoration: 'none', color: '#FFFFFF' }}>
+        <a href="leitura-atual" style={{ textDecoration: 'none', color: '#FFFFFF' }}>
           <div style={{ margin: '0px', padding: '20px 16px', ...isActive('leitura-atual') }}>
             Leitura
           </div>
