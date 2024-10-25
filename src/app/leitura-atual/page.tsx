@@ -3,7 +3,6 @@ import React from 'react';
 
 
 export default function Leituras() {
-  // Simulando leituras disponíveis (você pode substituir por dados reais futuramente)
   const leituras = [
     { id: 1, titulo: "Aventura na Floresta", descricao: "Descubra os mistérios escondidos na floresta encantada." },
     { id: 2, titulo: "O Pequeno Astronauta", descricao: "Uma viagem pelo espaço com muitas surpresas!" },
