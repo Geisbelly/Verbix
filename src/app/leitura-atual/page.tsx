@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 
 export default function Leituras() {
   const leiturasAvaliadas = [
-    { id: 1, titulo: "Aventura na Floresta", descricao: "Descubra os mistérios escondidos na floresta encantada." },
-    { id: 2, titulo: "O Pequeno Astronauta", descricao: "Uma viagem pelo espaço com muitas surpresas!" },
-    { id: 3, titulo: "O Segredo do Castelo", descricao: "Uma história cheia de mistérios em um castelo antigo." },
+    { id: 1, titulo: "Harry Potte e o Prisioneiro de Askaban", descricao: "Descubra os mistérios escondidos na floresta encantada." },
+    { id: 2, titulo: "O Pequeno Principe", descricao: "Uma viagem pelo espaço com muitas surpresas!" },
+    { id: 3, titulo: "Os Lusíadas", descricao: "Uma história cheia de mistérios" },
   ];
 
   const livrosPorGenero = {
@@ -22,7 +22,7 @@ export default function Leituras() {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
+    <div style={{ padding: '20px', width: '1200px'}}>
       <h1 style={{ color: '#480c8d', fontSize: '2em', fontWeight: 'bold', textAlign: 'center' }}>
         Leituras Disponíveis
       </h1>
@@ -36,9 +36,7 @@ export default function Leituras() {
         borderRadius: '10px',
         padding: '20px',
         marginBottom: '20px',
-        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-        overflowX: 'auto', 
-        whiteSpace: 'nowrap' 
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
       }}>
         <h2 style={{ color: '#ffffff', fontSize: '1.5em', fontWeight: 'bold', textAlign: 'center' }}>Mais bem avaliadas</h2>
         <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
@@ -82,17 +80,31 @@ export default function Leituras() {
         <div style={{ display: 'flex', gap: '15px', marginBottom: '20px' }}>
           {Object.keys(livrosPorGenero).map((genero) => (
             <label key={genero} style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-              <input
-                type="checkbox"
-                checked={generoSelecionado === genero}
-                onChange={() => handleGeneroChange(genero)}
-              />
+              <select
+                  value={generoSelecionado}
+                  onChange={(e) => handleGeneroChange(e.target.value)}
+                  style={{
+                    padding: '10px',
+                    borderRadius: '5px',
+                    border: '1px solid #480c8d',
+                    color: '#480c8d',
+                    fontWeight: 'bold',
+                    fontSize: '1em'
+                  }}
+                >
+                  <option value="">Selecione um gênero</option>
+                  {Object.keys(livrosPorGenero).map((genero) => (
+                    <option key={genero} value={genero}>
+                      {genero}
+                    </option>
+                  ))}
+                </select>
               <span style={{ color: '#480c8d', fontWeight: 'bold' }}>{genero}</span>
             </label>
           ))}
         </div>
 
-        {/* Lista de Livros do Gênero Selecionado */}
+        
         {generoSelecionado && (
           <div>
             <h4 style={{ color: '#1eaeeb', fontSize: '1.3em', fontWeight: 'bold' }}>{generoSelecionado}</h4>

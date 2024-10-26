@@ -33,11 +33,20 @@ body {
     border: 1px solid black;
   }
   .page-container {
-    height: 100vh;          /* Define altura de viewport */
-    overflow-y: auto;       /* Habilita scroll vertical */
-    overflow-x: hidden;     /* Oculta o scroll horizontal */
     padding: 20px;
-    box-sizing: border-box; /* Inclui o padding dentro da largura/altura */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow-y: auto;
   }
+  .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
   
 }

@@ -66,21 +66,19 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className="bg-fundo">
-        <div style={{ display: 'flex', height: '100vh', margin: '0', padding: '0' }}>
+        <div style={{ display: 'flex', height: '100vh', margin: '0', padding: '0', overflowY: 'auto', }}>
         <style>
         {`
           body {
             margin: 0;
             padding: 0;
-            overflow:   ; 
             font-family: Arial, Helvetica, sans-serif;
-
           }
         `}
       </style>
           <Navegador />
           <div className="page-container">
-          <main style={{ flex: 1,  flexDirection: 'row', background:'#E8F6FF',color:'#3F3F3F' }}>
+          <main style={{ flex: 1,  flexDirection: 'row', background:'#E8F6FF',color:'#3F3F3F', overflowY: 'auto', padding: '20px' }}>
             {children}
           </main>
           </div>
