@@ -13,6 +13,7 @@ export function Navegador() {
   const isActive = (route) => activeRoute === route ? { background: '#E8F6FF', fontWeight: '550' } : {};
 
   return (
+    
     <aside style={{ display: 'flex', width: '6%', flexDirection: 'column', padding: '10px', alignItems: 'center', background:'#2596be' }}>
       <div id="logo" style={{ alignSelf: 'center' }}>
         <img src="logo.png" alt="Logo" style={{ width: '80px', height: '80px' }} />
@@ -71,16 +72,18 @@ export default function RootLayout({
           body {
             margin: 0;
             padding: 0;
-            overflow: hidden; 
+            overflow:   ; 
             font-family: Arial, Helvetica, sans-serif;
 
           }
         `}
       </style>
           <Navegador />
+          <div className="page-container">
           <main style={{ flex: 1,  flexDirection: 'row', background:'#E8F6FF',color:'#3F3F3F' }}>
             {children}
           </main>
+          </div>
         </div>
       </body>
     </html>
