@@ -1,4 +1,4 @@
-// File: C:\Users\labins.pmw\Desktop\Ana 202402\projetoDSW\projectDSW-1\src\app\leitura-atual\page.tsx
+// File: C:\Users\Dougl\OneDrive\Área de Trabalho\DSW\projectDSW\src\app\leitura-atual\page.tsx
 import * as entry from '../../../../src/app/leitura-atual/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

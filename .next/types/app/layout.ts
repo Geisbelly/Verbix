@@ -1,4 +1,4 @@
-// File: C:\Users\labins.pmw\Desktop\Ana 202402\projetoDSW\projectDSW-1\src\app\layout.tsx
+// File: C:\Users\Dougl\OneDrive\Área de Trabalho\DSW\projectDSW\src\app\layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
