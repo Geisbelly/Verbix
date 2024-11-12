@@ -14,11 +14,12 @@ export default function Leituras() {
     Suspense: ["O Segredo do Castelo", "Mistério na Vila"],
   };
 
-  const [generoSelecionado, setGeneroSelecionado] = useState<string | null>(null);
+  // Inicializando o estado com string vazia
+  const [generoSelecionado, setGeneroSelecionado] = useState<string>("");
 
   // Alterna o gênero selecionado
   const handleGeneroChange = (genero: string) => {
-    setGeneroSelecionado(generoSelecionado === genero ? null : genero);
+    setGeneroSelecionado(genero === generoSelecionado ? "" : genero);
   };
 
   return (
