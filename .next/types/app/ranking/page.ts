@@ -1,4 +1,4 @@
-// File: C:\Users\Dougl\OneDrive\Área de Trabalho\DSW\projectDSW\src\app\ranking\page.tsx
+// File: C:\Users\labins.pmw\Desktop\projectDSW-branch-Douglas\src\app\ranking\page.tsx
 import * as entry from '../../../../src/app/ranking/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
