@@ -1,6 +1,9 @@
 {
-  "/biblioteca/page": "app/biblioteca/page.js",
   "/ranking/page": "app/ranking/page.js",
+  "/page": "app/page.js",
+  "/biblioteca/page": "app/biblioteca/page.js",
+  "/perfil/page": "app/perfil/page.js",
+  "/leitura-atual/page": "app/leitura-atual/page.js",
   "/cadastro/page": "app/cadastro/page.js",
-  "/page": "app/page.js"
+  "/login/page": "app/login/page.js"
 }

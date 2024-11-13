@@ -113,7 +113,9 @@ const Navbar = () => {
                 <Link href="/configuracoes">
                   <div className="px-4 py-2 hover:bg-gray-200 cursor-pointer">Configurações</div>
                 </Link>
+                <Link href='/login'>
                 <div className="px-4 py-2 hover:bg-gray-200 cursor-pointer">Sair</div>
+                </Link>
               </div>
             )}
           </div>
