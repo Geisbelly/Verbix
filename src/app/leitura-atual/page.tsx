@@ -3,12 +3,12 @@ import React, { useState } from 'react';
 
 export default function Leituras() {
   const leiturasAvaliadas = [
-    { id: 1, titulo: "Harry Potte e o Prisioneiro de Askaban", descricao: "Descubra os mistérios escondidos na floresta encantada." },
-    { id: 2, titulo: "O Pequeno Principe", descricao: "Uma viagem pelo espaço com muitas surpresas!" },
+    { id: 1, titulo: "Harry Potter e o Prisioneiro de Azkaban", descricao: "Descubra os mistérios escondidos na floresta encantada." },
+    { id: 2, titulo: "O Pequeno Príncipe", descricao: "Uma viagem pelo espaço com muitas surpresas!" },
     { id: 3, titulo: "Os Lusíadas", descricao: "Uma história cheia de mistérios" },
   ];
 
-  const livrosPorGenero = {
+  const livrosPorGenero: { [key: string]: string[] } = {
     Aventura: ["Aventura na Floresta", "Expedição nas Montanhas"],
     Ficcao: ["O Pequeno Astronauta", "Realidade Alternativa"],
     Suspense: ["O Segredo do Castelo", "Mistério na Vila"],
@@ -21,7 +21,7 @@ export default function Leituras() {
   };
 
   return (
-    <div >
+    <div>
       <h1 className="text-3xl font-bold text-center text-primary mb-8">
         Leituras Disponíveis
       </h1>
@@ -63,7 +63,7 @@ export default function Leituras() {
           </select>
         </div>
 
-        {generoSelecionado && (
+        {generoSelecionado && livrosPorGenero[generoSelecionado] && (
           <div>
             <h4 className="text-accent text-xl font-bold mb-4">{generoSelecionado}</h4>
             <ul>
