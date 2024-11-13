@@ -14,55 +14,30 @@ export default function Leituras() {
     Suspense: ["O Segredo do Castelo", "Mistério na Vila"],
   };
 
-  // Inicializando o estado com string vazia
   const [generoSelecionado, setGeneroSelecionado] = useState<string>("");
 
-  // Alterna o gênero selecionado
   const handleGeneroChange = (genero: string) => {
     setGeneroSelecionado(genero === generoSelecionado ? "" : genero);
   };
 
   return (
-    <div style={{ padding: '20px', width: '1200px'}}>
-      <h1 style={{ color: '#480c8d', fontSize: '2em', fontWeight: 'bold', textAlign: 'center' }}>
+    <div >
+      <h1 className="text-3xl font-bold text-center text-primary mb-8">
         Leituras Disponíveis
       </h1>
-      <p style={{ color: '#3F3F3F', textAlign: 'center', marginBottom: '40px' }}>
+      <p className="text-center text-gray-700 mb-10">
         Explore as leituras mais bem avaliadas e escolha seu gênero favorito!
       </p>
 
       {/* Contêiner Superior - Leituras mais bem avaliadas */}
-      <div style={{
-        backgroundColor: '#1eaeeb',
-        borderRadius: '10px',
-        padding: '20px',
-        marginBottom: '20px',
-        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
-      }}>
-        <h2 style={{ color: '#ffffff', fontSize: '1.5em', fontWeight: 'bold', textAlign: 'center' }}>Mais bem avaliadas</h2>
-        <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
+      <div className="bg-primary p-6 rounded-lg shadow-lg mb-8">
+        <h2 className="text-white text-xl font-bold text-center mb-4">Mais bem avaliadas</h2>
+        <div className="flex justify-around flex-wrap gap-6">
           {leiturasAvaliadas.map((leitura) => (
-            <div key={leitura.id} style={{
-              backgroundColor: '#ffffff',
-              border: '2px solid #480c8d',
-              borderRadius: '10px',
-              padding: '20px',
-              margin: '10px',
-              width: '200px',
-              textAlign: 'center',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
-            }}>
-              <h3 style={{ color: '#480c8d' }}>{leitura.titulo}</h3>
-              <p style={{ color: '#3F3F3F' }}>{leitura.descricao}</p>
-              <button style={{
-                backgroundColor: '#e956f0',
-                color: '#ffffff',
-                padding: '8px 12px',
-                border: 'none',
-                borderRadius: '5px',
-                cursor: 'pointer',
-                marginTop: '10px'
-              }}>
+            <div key={leitura.id} className="bg-white border-2 border-primary rounded-lg p-5 w-60 text-center shadow-md">
+              <h3 className="text-primary">{leitura.titulo}</h3>
+              <p className="text-gray-700">{leitura.descricao}</p>
+              <button className="bg-accent text-white py-2 px-4 rounded mt-4">
                 Ler agora
               </button>
             </div>
@@ -71,47 +46,29 @@ export default function Leituras() {
       </div>
 
       {/* Contêiner Inferior - Checkboxes de Gêneros e Livros */}
-      <div style={{
-        backgroundColor: '#ffffff',
-        borderRadius: '10px',
-        padding: '20px',
-        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
-      }}>
-        <h3 style={{ color: '#480c8d', fontSize: '1.5em', fontWeight: 'bold', marginBottom: '10px' }}>Gêneros</h3>
-        <div style={{ display: 'flex', gap: '15px', marginBottom: '20px' }}>
-          {Object.keys(livrosPorGenero).map((genero) => (
-            <label key={genero} style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-              <select
-                  value={generoSelecionado}
-                  onChange={(e) => handleGeneroChange(e.target.value)}
-                  style={{
-                    padding: '10px',
-                    borderRadius: '5px',
-                    border: '1px solid #480c8d',
-                    color: '#480c8d',
-                    fontWeight: 'bold',
-                    fontSize: '1em'
-                  }}
-                >
-                  <option value="">Selecione um gênero</option>
-                  {Object.keys(livrosPorGenero).map((genero) => (
-                    <option key={genero} value={genero}>
-                      {genero}
-                    </option>
-                  ))}
-                </select>
-              <span style={{ color: '#480c8d', fontWeight: 'bold' }}>{genero}</span>
-            </label>
-          ))}
+      <div className="bg-white p-6 rounded-lg shadow-lg">
+        <h3 className="text-primary text-xl font-bold mb-5">Gêneros</h3>
+        <div className="flex gap-6 mb-6">
+          <select
+            value={generoSelecionado}
+            onChange={(e) => handleGeneroChange(e.target.value)}
+            className="p-3 border-2 border-primary rounded-md text-primary font-semibold"
+          >
+            <option value="">Selecione um gênero</option>
+            {Object.keys(livrosPorGenero).map((genero) => (
+              <option key={genero} value={genero}>
+                {genero}
+              </option>
+            ))}
+          </select>
         </div>
 
-        
         {generoSelecionado && (
           <div>
-            <h4 style={{ color: '#1eaeeb', fontSize: '1.3em', fontWeight: 'bold' }}>{generoSelecionado}</h4>
+            <h4 className="text-accent text-xl font-bold mb-4">{generoSelecionado}</h4>
             <ul>
               {livrosPorGenero[generoSelecionado].map((livro, index) => (
-                <li key={index} style={{ color: '#3F3F3F', padding: '8px 0', borderBottom: '1px solid #eaeaea' }}>{livro}</li>
+                <li key={index} className="text-gray-700 py-2 border-b border-gray-200">{livro}</li>
               ))}
             </ul>
           </div>

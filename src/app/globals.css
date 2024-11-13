@@ -2,25 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer base {
+  .font-body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  :root {
+    --text: rgb(0, 0, 0);
+    --background: rgb(227, 244, 252);
+    --primary: rgb(174, 114, 243);
+    --secondary: rgb(174, 114, 243, 0.6);
+    --accent: rgb(161, 15, 169);
 }
+
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+    :root {
+        --text: rgb(255, 255, 255);
+        --background: rgb(3, 20, 28);
+        --primary: rgb(72, 12, 141,0.7);
+        --secondary: rgb(72, 12, 141, 0.6);
+        --accent: rgb(233, 86, 240);
+    }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  color:#262626;
-  
-}
+  body {
+    background-color: var(--background);
+    color: var(--text);
+
+  }
+  main {
+    @apply h-full min-h-screen  flex-1 overflow-y-auto overflow-x-hidden  p-6;
+
+  }
+  .bg-secondary {
+    background-color: var(--secondary);
+  }
+}}
+
 
 @layer utilities {
   .text-balance {
@@ -29,7 +47,7 @@ body {
   .scroll-container {
     width: 300px;
     height: 200px;
-    overflow-y: scroll;  /* Habilita o scroll vertical */
+    overflow-y: scroll;
     border: 1px solid black;
   }
   .page-container {
@@ -42,11 +60,9 @@ body {
     overflow-y: auto;
   }
   .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 }

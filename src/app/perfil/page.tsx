@@ -1,88 +1,68 @@
 "use client";
 import React from 'react';
 
-
 export default function Page() {
   return (
-    
-    <div className=' h-100vh'>
-      
-      
-     
-        
-        <div style={{ display: 'flex', flex: 1, gap: '0px' }}>
-
-          <section id="perfil" style={{ width: '35%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '50px', borderRight:'2.5px solid #E1E3E5'  }}>
-            
-            <div style={{ textAlign: 'center' }}>
-              
-              <img src="/foto.png" alt="Foto do Perfil" style={{ marginBottom:'5px',width: '180px', height: '180px', borderRadius: '100%', border: '7px solid #2596be' }} />
-              
-              <h3 style={{marginBottom:'3px',marginTop:'5px'}}>João da Silva</h3>
-              <h4 style={{marginTop:'2px', marginBottom:'8px', color:'#8E9192'}}>@joaosilva</h4>
-            
-            </div>
-            
-            <div style={{ display: 'flex', flexDirection: 'row', gap: '20px', padding: '20px', textAlign: 'center' }}>
-              
-              <div style={{maxWidth:'82px', minHeight:'50px'}}>
-                <p style={{marginBottom:'3px',marginTop:'8px',fontSize:'15px', fontWeight:'550'}}>Livros lidos</p>
-                <p style={{marginTop:'5px', fontSize:'15px'}}>12</p>
-              </div>
-              
-              <div style={{maxWidth:'82px', minHeight:'50px'}}>
-                <p style={{marginBottom:'3px',marginTop:'8px',fontSize:'15px', fontWeight:'550'}}>Páginas lidas</p>
-                <p style={{marginTop:'5px', fontSize:'15px'}}>1502</p>
-              </div>
-              
-              <div style={{maxWidth:'82px', minHeight:'50px'}}>
-                <p style={{marginBottom:'3px',marginTop:'8px', fontSize:'15px', fontWeight:'550'}}>Missões concluídas</p>
-                <p style={{marginTop:'5px', fontSize:'15px'}}>5</p>
-              </div>
-              
-            </div>
-          </section>
-
-          <section id="conquistas" style={{ width: '65%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '30px' }}>
-            
-            <h3 style={{marginBottom:'3px'}}>• CONQUISTA •</h3>
-              
-              <div style={{ display: 'flex', flexDirection: 'row', gap: '20px', padding: '20px',marginTop:'3px'  }}>
-              
-                <div style={{ textAlign: 'center'}}>
-                  <img src="conquista.jfif" alt="Conquista 1" style={{ width: '145px', height: '145px', borderRadius:'10px', marginBottom:'5px' }} />
-                  <h4 style={{marginTop:'5px'}}>Conquista 1</h4>
-                </div>
-                
-                <div style={{ textAlign: 'center' }}>
-                  <img src="conquista.jfif" alt="Conquista 2" style={{ width: '145px', height: '145px', borderRadius:'10px', marginBottom:'5px' }} />
-                  <h4 style={{marginTop:'5px'}}>Conquista 2</h4>
-                </div>
-                
-                <div style={{ textAlign: 'center' }}>
-                  <img src="conquista.jfif" alt="Conquista 3" style={{ width: '145px', height: '145px', borderRadius:'10px', marginBottom:'5px' }} />
-                  <h4 style={{marginTop:'5px'}}>Conquista 3</h4>
-                </div>
-              
-              </div>
-
-            <h3 style={{marginBottom:'3px'}}>• MISSÃO DO MÊS •</h3>
-
-              <div  style={{marginTop:'3px'}}>
-                
-                <div id="progresso-paginas">
-                  <h4 style={{marginBottom:'5px'}}>Páginas</h4>
-                  <progress id="barra-progresso" value="46" max="100" style={{ width: '450px', height: '32px' }}></progress>
-                </div>
-                
-                <div id="progresso-livros">
-                  <h4 style={{marginBottom:'5px'}}>Livros</h4>
-                  <progress id="barra-progresso" value="2" max="5" style={{ width: '450px', height: '32px' }}></progress>
-                </div>
-              
-              </div>
-          </section>
+    <div className="flex rounded-lg p-4 bg-secondary ">
+      {/* Sidebar de perfil */}
+      <section id="perfil" className="w-1/3 flex flex-col items-center pt-12 border-r-2 border-gray-300">
+        <div className="text-center">
+          <img
+            src="/foto.png"
+            alt="Foto do Perfil"
+            className="mb-1 w-44 h-44 rounded-full border-8 border-[var(--text)]"
+          />
+          <h3 className="mt-1 mb-1 text-xl font-semibold">João da Silva</h3>
+          <h4 className="text-gray-500">@joaosilva</h4>
         </div>
+
+        <div className="flex gap-5 py-5 text-center">
+          <div className="max-w-[82px] min-h-[50px]">
+            <p className="mb-1 mt-2 text-base font-semibold">Livros lidos</p>
+            <p className="mt-1 text-base">12</p>
+          </div>
+          <div className="max-w-[82px] min-h-[50px]">
+            <p className="mb-1 mt-2 text-base font-semibold">Páginas lidas</p>
+            <p className="mt-1 text-base">1502</p>
+          </div>
+          <div className="max-w-[82px] min-h-[50px]">
+            <p className="mb-1 mt-2 text-base font-semibold">Missões concluídas</p>
+            <p className="mt-1 text-base">5</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Conquistas e Missão */}
+      <section id="conquistas" className="w-2/3 flex flex-col items-center pt-8">
+        <h3 className="mb-1 text-lg font-semibold">• CONQUISTA •</h3>
+
+        <div className="flex gap-5 py-5 mt-1">
+          {['Conquista 1', 'Conquista 2', 'Conquista 3'].map((title, idx) => (
+            <div key={idx} className="text-center">
+              <img
+                src="conquista.jfif"
+                alt={title}
+                className="w-36 h-36 rounded-lg mb-1"
+              />
+              <h4 className="mt-1">{title}</h4>
+            </div>
+          ))}
+        </div>
+
+        <h3 className="mb-1 text-lg font-semibold">• MISSÃO DO MÊS •</h3>
+
+        <div className="mt-1 w-[450px]">
+          <div id="progresso-paginas" className="mb-5">
+            <h4 className="mb-1">Páginas</h4>
+            <progress id="barra-progresso" value="46" max="100" className="w-full h-8"></progress>
+          </div>
+
+          <div id="progresso-livros">
+            <h4 className="mb-1">Livros</h4>
+            <progress id="barra-progresso" value="2" max="5" className="w-full h-8"></progress>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
